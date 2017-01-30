@@ -1,0 +1,45 @@
+<doctype html>
+    <html>
+
+    <head>
+        <link href="/bower_components/polymer/polymer.html" rel="import" />
+        <link href="/bower_components/paper-header-panel/paper-header-panel.html" rel="import" />
+        <link href="/bower_components/paper-drawer-panel/paper-drawer-panel.html" rel="import" />
+        <link href="/bower_components/paper-toolbar/paper-toolbar.html" rel="import" />
+        <link href="/bower_components/paper-menu/paper-menu.html" rel="import" />
+        <link href="/bower_components/paper-item/paper-item.html" rel="import" />
+        <link href="/bower_components/paper-button/paper-button.html" rel="import" />
+        <link href="/bower_components/iron-icons/iron-icons.html" rel="import" />
+        <link href="/bower_components/paper-material/paper-material.html" rel="import" />
+        <link href="/bower_components/google-youtube/google-youtube.html" rel="import" /> 
+        </head>
+
+    <body class="vertical layout">
+    <paper-drawer-panel>
+     <paper-header-panel drawer>
+            <paper-toolbar>
+                <div>First Polymer Web Page</div>
+            </paper-toolbar>
+            <paper-menu>
+            <paper-item> option1 </paper-item>
+            <paper-item> option2 </paper-item>
+            <paper-item> option3 </paper-item>
+            <paper-item> option4 </paper-item>
+            </paper-menu>
+            </paper-header-panel>
+            
+        <paper-header-panel main>
+            <paper-toolbar>
+                <div>Welcome to Polymer Web Page</div>
+            </paper-toolbar>
+            <paper-material style="background:#ffffff;">
+            <paper-button raised style="margin:10px; color:red;"><iron-icon icon="save"></iron-icon>Save</paper-button>
+                <h3>First Polymer Video</h3>
+                <google-youtube video-id="3KP36218LVw" height="500px" width="900px" autoplay></google-youtube>
+                <p>Some description goes here </p>
+                </paper-material>
+            </paper-header-panel>
+            <paper-drawer-panel>
+    </body>
+
+    </html>

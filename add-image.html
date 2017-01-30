@@ -1,0 +1,36 @@
+<link href="/bower_components/polymer/polymer.html" rel="import" />
+<link href="/bower_components/paper-toolbar/paper-toolbar.html" rel="import" />
+<link href="/bower_components/paper-input/paper-input.html" rel="import" />
+<dom-module id ="add-image">
+<style>
+#flwr {
+display:block;
+
+}
+:host {
+display:inline-block;
+}
+</style>
+<template>
+<div>
+<paper-toolbar><div>{{ name }}</div></paper-toolbar>
+<img src="{{ path }}"/>
+</div>
+</template>
+</dom-module>
+<script>
+Polymer({
+ is : "add-image",
+ properties:{
+ name :{
+ type: String
+ },
+ path : {
+ type: String
+ }
+ }
+
+});
+
+</script>
+

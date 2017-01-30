@@ -1,0 +1,36 @@
+<html>
+<head>
+<link href="/bower_components/polymer/polymer.html" rel="import"/>
+<link href="/bower_components/paper-button/paper-button.html" rel="import"/>
+<link href="/bower_components/iron-icons/iron-icons.html" rel="import"/>
+
+<style >
+
+paper-button[raised] {
+  background: yellow;
+}
+
+paper-button[raised]:hover {
+  background: lime;
+}
+
+paper-button[disabled],
+paper-button[toggles][active] {
+  background: red;
+}
+</style>
+
+</head>
+<body>
+<h1>Different types of paper buttons</h1> 
+
+<paper-button><iron-icon icon="check"></iron-icon>link</paper-button>
+<paper-button raised><iron-icon icon="file-download"></iron-icon>raised</paper-button>
+<paper-button toggles><iron-icon icon="favorite"></iron-icon>toggles</paper-button>
+<paper-button disabled><iron-icon icon="block"></iron-icon>disabled</paper-button>
+
+
+
+</body>
+</html>
+

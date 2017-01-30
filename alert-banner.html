@@ -1,0 +1,26 @@
+<link href="/bower_components/polymer/polymer.html" rel="import" />
+<dom-module id="alert-banner">
+    <template>
+        <style>
+            .alert {
+                background: blue;
+                color: white;
+            }
+        </style>
+        <div class="alert">Hey this is an alert banner</div>
+        <div>{{title}}</div>
+    </template>
+    <script>
+        Polymer({
+            is: "alert-banner",
+            properties: {
+                title: {
+                    type: String,
+                    value: "Hey this is the first banner component"
+                }
+            }, ready: function () {
+                console.log('First component is ready to use');
+            }
+        });
+    </script>
+</dom-module>

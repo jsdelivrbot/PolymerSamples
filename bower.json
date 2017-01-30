@@ -1,0 +1,24 @@
+{
+  "name": "polymer",
+  "authors": [
+    "Vijaywargiya",
+    "Poonam (Poonam) <poonam.vijaywargiya@ge.com>"
+  ],
+  "description": "Polymer first component creation",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "firebase": "^3.0"
+  },
+  "dependencies": {
+    "app-elements": "^0.10.1"
+  }
+}

@@ -1,0 +1,26 @@
+<link href="/bower_components/polymer/polymer.html" rel="import" />
+<link href="add-image.html" rel="import" />
+<link rel="import" href="/bower_components/iron-ajax/iron-ajax.html" />
+
+<dom-module id ="add-images">
+<style>
+add-image {
+vertical-align: text-top;
+}
+:host {
+display:inline-block;
+}
+</style>
+<template>
+<iron-ajax auto  url="/input.json" handle-as="json" last-response ="{{imageList}}"></iron-ajax>
+<template is="dom-repeat" items="{{imageList}}" as="list" >
+<add-image path = "{{list.path}}" name = "{{list.name}}" > </add-image> 
+</template>
+</template>
+</dom-module>
+<script>
+Polymer({
+ is : "add-images"
+});
+
+</script>
